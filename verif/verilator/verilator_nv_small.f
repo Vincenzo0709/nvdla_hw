@@ -15,7 +15,7 @@
 -I../../outdir/nv_small/vmod/nvdla/top
 -I../../outdir/nv_small/vmod/nvdla/csb_master
 -I../../outdir/nv_small/vmod/nvdla/cfgrom
--I../../outdir/nv_small/vmod/rams/synth
+-I../../outdir/nv_small/vmod/rams/fpga/small_rams
 -I../../outdir/nv_small/vmod/vlibs
 -I../../outdir/nv_small/vmod/include
 -v ../../outdir/nv_small/vmod/vlibs/RANDFUNC.vlib

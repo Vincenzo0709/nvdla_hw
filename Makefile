@@ -124,3 +124,6 @@ endif
 	@echo "====================================================================="
 
 $(TREE_MAKE): Makefile
+
+run:
+	@$(MAKE) -C verif/verilator/ run
