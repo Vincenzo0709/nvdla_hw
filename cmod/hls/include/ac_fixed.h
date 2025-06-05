@@ -407,7 +407,7 @@ public:
 #endif
 
   // Explicit conversion functions to ac_int that captures all integer bits (bits are truncated)
-  inline ac_int<AC_MAX(I,1),S> to_ac_int() const { return ((ac_fixed<AC_MAX(I,1),AC_MAX(I,1),S>) *this).slc<AC_MAX(I,1)>(0); }
+  inline ac_int<AC_MAX(I,1),S> to_ac_int() const { return ((ac_fixed<AC_MAX(I,1),AC_MAX(I,1),S>) *this).template slc<AC_MAX(I,1)>(0); }
 
   // Explicit conversion functions to C built-in types -------------
   inline int to_int() const { return ((I-W) >= 32) ? 0 : (signed int) to_ac_int(); } 
